@@ -1,6 +1,5 @@
-var slaying = true;
-// A bit of new math magic to calculate the odds
-// of hitting the dragon. We'll cover this soon!
+window.onload = function () {
+  var slaying = true;
 var youHit = Math.floor(Math.random() * 2);
 var damageThisRound = Math.floor(Math.random() * 5 + 1);
 var totalDamage = 0;
@@ -24,4 +23,5 @@ while (slaying) {
       hi.appendChild(textnode2)
     slaying = false;
   }
+}
 }
