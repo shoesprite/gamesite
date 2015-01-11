@@ -1,4 +1,7 @@
+
 window.onload = function () {
+  var hi = document.getElementById('hi')
+  var button = document.getElementById('button')
   var slaying = true;
   var totalDamage = 0;
   button.onclick = function () {
@@ -9,8 +12,7 @@ window.onload = function () {
     }
 var youHit = Math.floor(Math.random() * 2);
 var damageThisRound = Math.floor(Math.random() * 5 + 1);
-var hi = document.getElementById('hi')
-var button = document.getElementById('button')
+
   if (youHit) {
   var textnode = document.createTextNode("You hit the dragon and did " + damageThisRound + " damage!");
   hi.appendChild(textnode)
