@@ -2,6 +2,11 @@ window.onload = function () {
   var slaying = true;
   var totalDamage = 0;
   button.onclick = function () {
+    if (!slaying) {
+// if done slaying, clear hi
+      hi.innerHTML = ''
+      slaying = true
+    }
 var youHit = Math.floor(Math.random() * 2);
 var damageThisRound = Math.floor(Math.random() * 5 + 1);
 var hi = document.getElementById('hi')
