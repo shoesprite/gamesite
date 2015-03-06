@@ -6,7 +6,6 @@ window.onload = function () {
 var createDivAndText = function (sometext) {
   adventure_text.appendChild(document.createElement('div').appendChild(sometext))
 }
- confirm("Are you ready to play?")
 var money = 0
 var textnode = document.createTextNode("You are an adventurer, trekking through the forest in search of monsters and treasure. ");
 createDivAndText(textnode)
