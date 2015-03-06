@@ -10,6 +10,7 @@ var textnode = document.createTextNode("You are an adventurer, trekking through 
 adventure_text.appendChild(textnode)
 var textnode2 = document.createTextNode("Suddenly, you find a baby dragon! Dragons are a lot of work, but the hatchling is so adorable. It stares at you with big eyes, and starts to follow you around wherever you go. It looks like you can't just walk away. Do you keep it as a pet?")
  
+ adventure_text.appendChild(textnode2)
  yesButton.onclick = function() {
   var textnode3 = document.createTextNode("You pat the the hatchling on its head. It purrs, leaving soot on your pants.")
   adventure_text.appendChild(textnode3)
