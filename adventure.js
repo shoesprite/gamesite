@@ -13,7 +13,8 @@ var textnode2 = document.createTextNode("Suddenly, you find a baby dragon! Drago
  yesButton.onclick = function() {
   var textnode3 = document.createTextNode("You pat the the hatchling on its head. It purrs, leaving soot on your pants.")
   adventure_text.appendChild(textnode3)
-} noButton.onclick = function() {
+} 
+noButton.onclick = function() {
   var textnode4 = document.createTextNode("You walk away from the deal with heavy pockets and a heavy heart. The dragon's eyes linger in your mind.");
   adventure_text.appendChild(textnode4)
   money = 100
