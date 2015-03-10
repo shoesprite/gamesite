@@ -21,6 +21,11 @@ noButton.onclick = function() {
 createDivAndText(textnode4)
 money = 100
   var userAnswerII = prompt("On the bright side, you have 100gp to spend. Would you like to buy anything?")
+    if (userAnswerII === yes) {
+
+      var textnode5 = document.createTextNode("You walk into a market with lots of cool stuff. However, the only items within your budget are some snacks (25 gp), some figurines (50 gp), a few lanterns(75), and some fancy amber jewelry(100.)");
+      createDivAndText(textnode5)
+  
 }
 //var feedback = prompt("Please rate my game out of 10.")
 if (feedback > 8)
