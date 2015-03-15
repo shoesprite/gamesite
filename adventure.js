@@ -52,3 +52,4 @@ if (feedback > 8)
     createDivAndText(textnode6)
 }
 }
+}
