@@ -2,7 +2,39 @@ window.onload = function () {
   var adventure_text = document.getElementById('adventure_text')
   var yesButton = document.getElementById('yesButton')
   var noButton = document.getElementById('noButton')
+  var recordSalesForm = document.getElementById('recordSalesForm')
 
+  function getRadioCheckedValue(radio_name) {
+   var oRadio = document.forms[0].elements[radio_name];
+   for(var i = 0; i < oRadio.length; i++)
+   {
+      if(oRadio[i].checked)
+      {
+         return oRadio[i].value;
+      }
+   }
+ 
+   return '';
+}
+
+  recordSalesForm.onsubmit = function () {
+    switch (getRadioCheckedValue('inventory')) {
+      case 'snack':
+        var textnode6 = document.createTextNode('You buy some almond-flavored pastries that are flaky and filled with butter. You pat your tummy, your hunger sated.')
+        createDivAndText(textnode6)
+        money-=25
+        break;
+      case 'figurines':
+        var textnode7 = document.createTextNode('You buy a stone figurine of a lion. It snarls fiercely at you, almost as if it were alive.')
+        createDivAndText(textnode7)
+        money-=50
+        break;
+      case 'lanterns':
+        var textnode8 = document.createTextNode('You go over to ')
+        break;
+      de
+      }
+  }
   var createDivAndText = function (sometext) {
     adventure_text.appendChild(document.createElement('div').appendChild(sometext))
     adventure_text.appendChild(document.createElement("br"));
@@ -24,24 +56,8 @@ window.onload = function () {
     money = 100
     var userAnswerII = prompt("On the bright side, you have 100gp to spend. Would you like to buy anything?")
     if (userAnswerII === yes) {
-
       var textnode5 = document.createTextNode("You walk into a market with lots of cool stuff. However, the only items within your budget are some snacks (25 gp), some figurines (50 gp), a few lanterns(75), and some fancy amber jewelry(100.)");
       createDivAndText(textnode5)
-      switch (userAnswerIII) {
-        case 'snack':
-          var textnode6 = document.createTextNode('You buy some almond-flavored pastries that are flaky and filled with butter. You pat your tummy, your hunger sated.')
-          createDivAndText(textnode6)
-          money-=25
-          break;
-        case 'figurines':
-          var textnode7 = document.createTextNode('You buy a stone figurine of a lion. It snarls fiercely at you, almost as if it were alive.')
-          createDivAndText(textnode7)
-          money-=50
-          break;
-        case 'lanterns':
-          var textnode8 = document.createTextNode('You go over to ')
-          break;
-      }
     }
   }
 }
