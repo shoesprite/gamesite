@@ -9,7 +9,7 @@ window.onload = function () {
   var money = 0
   var textnode = document.createTextNode("You are an adventurer, trekking through the forest in search of monsters and treasure. ");
   createDivAndText(textnode)
-  var textnode2 = document.createTextNode("Suddenly, you find a baby dragon! Dragons are a lot of work, but the hatchling is so adorable. It stares at you with big eyes, and starts to follow you around wherever you go. It looks like you can't just walk away.<br/> Suddenly, you remember that dragons are highly valued on the market for their brute strength. Do you keep it as a pet? ")
+  var textnode2 = document.createTextNode("Suddenly, you find a baby dragon! Dragons are a lot of work, but the hatchling is so adorable. It stares at you with big eyes, and starts to follow you around wherever you go. It looks like you can't just walk away.<br> Suddenly, you remember that dragons are highly valued on the market for their brute strength. Do you keep it as a pet? ")
  
   createDivAndText(textnode2)
   yesButton.onclick = function() {
