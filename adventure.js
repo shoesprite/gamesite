@@ -25,6 +25,22 @@ money = 100
 
       var textnode5 = document.createTextNode("You walk into a market with lots of cool stuff. However, the only items within your budget are some snacks (25 gp), some figurines (50 gp), a few lanterns(75), and some fancy amber jewelry(100.)");
       createDivAndText(textnode5)
+      window.setTimeout(var userAnswerIII = prompt('What would you like to buy?'), 3000)
+        switch (userAnswerIII) {
+          case 'snack':
+            var textnode6 = document.createTextNode('You buy some almond-flavored pastries that are flaky and filled with butter. You pat your tummy, your hunger sated.')
+            createDivAndText(textnode6)
+            money-=25
+            break;
+          case 'figurines':
+            var textnode7 = document.createTextNode('You buy a stone figurine of a lion. It snarls fiercely at you, almost as if it were alive.')
+            createDivAndText(textnode7)
+            money-=50
+            break;
+          case 'lanterns':
+            var textnode8 = document.createTextNode('You go over to ')
+            
+        }
   
 }
 //var feedback = prompt("Please rate my game out of 10.")
