@@ -36,6 +36,7 @@ window.onload = function () {
         money-=100
         break;
       }
+    return false;
   }
   var createDivAndText = function (sometext) {
     adventure_text.appendChild(document.createElement('div').appendChild(sometext))
