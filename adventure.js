@@ -32,7 +32,9 @@ window.onload = function () {
       case 'lanterns':
         var textnode8 = document.createTextNode('You go over to ')
         break;
-      de
+      case 'jewelry':
+        money-=100
+        break;
       }
   }
   var createDivAndText = function (sometext) {
