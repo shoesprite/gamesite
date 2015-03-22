@@ -3,6 +3,7 @@ window.onload = function () {
   var yesButton = document.getElementById('yesButton')
   var noButton = document.getElementById('noButton')
   var recordSalesForm = document.getElementById('recordSalesForm')
+  var adventure_text2 = document.getElementById('adventure_text2')
 
   function getRadioCheckedValue(radio_name) {
    var oRadio = document.forms[0].elements[radio_name];
@@ -42,6 +43,10 @@ window.onload = function () {
     adventure_text.appendChild(document.createElement('div').appendChild(sometext))
     adventure_text.appendChild(document.createElement("br"));
   }
+   var createDivAndText2 = function (sometext) {
+    adventure_text2.appendChild(document.createElement('div').appendChild(sometext))
+    adventure_text2.appendChild(document.createElement("br"));
+  }
   var money = 0
   var textnode = document.createTextNode("You are an adventurer, trekking through the forest in search of monsters and treasure. ");
   createDivAndText(textnode)
@@ -61,6 +66,8 @@ window.onload = function () {
     if (userAnswerII === 'yes') {
       var textnode5 = document.createTextNode("You walk into a market with lots of cool stuff. However, the only items within your budget are some snacks (25 gp), some figurines (50 gp), a few lanterns(75), and some fancy amber jewelry(100.)");
       createDivAndText(textnode5)
+    
+    recordSalesForm.onsubmit
     }
   }
 }
