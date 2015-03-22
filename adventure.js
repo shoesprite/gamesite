@@ -22,8 +22,8 @@ window.onload = function () {
 var buyStuff = function (cost, flavorText) {
   if(money >= cost) {
     createDivAndText2(document.createTextNode(flavorText))
-    createDivAndText2(document.createTextNode('You now have ' + money + ' gp.'))
     money-=cost
+    createDivAndText2(document.createTextNode('You now have ' + money + ' gp.'))
   } else {
     createDivAndText2(document.createTextNode('You do not have enough gold for that! You only have ' + money + ' gp.'))
   }
