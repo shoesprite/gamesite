@@ -4,6 +4,7 @@ window.onload = function () {
   var noButton = document.getElementById('noButton')
   var recordSalesForm = document.getElementById('recordSalesForm')
   var adventure_text2 = document.getElementById('adventure_text2')
+  var money = 0
 
   function getRadioCheckedValue(radio_name) {
    var oRadio = document.forms[0].elements[radio_name];
@@ -18,25 +19,28 @@ window.onload = function () {
    return '';
 }
 
+var buyStuff = function (cost, flavorText) {
+  if(money >= cost:) {
+    createDivAndText2(document.createTextNode(flavorText))
+    money-=cost
+  } else {
+    createDivAndText(document.createTextNode('You do not have enough gold for that! You only have ' + money + ' gp.'))
+  }
+}
+
   recordSalesForm.onsubmit = function () {
     switch (getRadioCheckedValue('inventory')) {
       case 'snacks':
-        var textnode6 = document.createTextNode('You buy some almond-flavored pastries that are flaky and filled with butter. You pat your tummy, your hunger sated.')
-        createDivAndText2(textnode6)
-        money-=25
+        buyStuff(25, 'You buy some almond-flavored pastries that are flaky and filled with butter. You pat your tummy, your hunger sated.')
         break;
       case 'figurines':
-        var textnode7 = document.createTextNode('You buy a stone figurine of a lion. It snarls fiercely at you, almost as if it were alive.')
-        createDivAndText2(textnode7)
-        money-=50
-        break;
+          buyStuff(50, 'You buy a stone figurine of a lion. It snarls fiercely at you, almost as if it were alive.')
+          break;
       case 'lanterns':
-        var textnode8 = document.createTextNode('You go over to ')
-        createDivAndText2(textnode8)
+        buyStuff(75, 'lanterns')
         break;
       case 'jewelry':
-        createDivAndText2(document.createTextNode('jewelry'))
-        money-=100
+        buyStuff(100, 'jewelry')
         break;
       }
     return false;
@@ -49,7 +53,6 @@ window.onload = function () {
     adventure_text2.appendChild(document.createElement('div').appendChild(sometext))
     adventure_text2.appendChild(document.createElement("br"));
   }
-  var money = 0
   var textnode = document.createTextNode("You are an adventurer, trekking through the forest in search of monsters and treasure. ");
   createDivAndText(textnode)
   var textnode2 = document.createTextNode("Suddenly, you find a baby dragon! Dragons are a lot of work, but the hatchling is so adorable. It stares at you with big eyes, and starts to follow you around wherever you go. It looks like you can't just walk away.")
