@@ -20,7 +20,7 @@ window.onload = function () {
 }
 
 var buyStuff = function (cost, flavorText) {
-  if(money >= cost:) {
+  if(money >= cost) {
     createDivAndText2(document.createTextNode(flavorText))
     money-=cost
   } else {
