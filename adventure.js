@@ -20,7 +20,7 @@ window.onload = function () {
 
   recordSalesForm.onsubmit = function () {
     switch (getRadioCheckedValue('inventory')) {
-      case 'snack':
+      case 'snacks':
         var textnode6 = document.createTextNode('You buy some almond-flavored pastries that are flaky and filled with butter. You pat your tummy, your hunger sated.')
         createDivAndText2(textnode6)
         money-=25
