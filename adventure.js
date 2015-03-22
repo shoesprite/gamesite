@@ -22,12 +22,12 @@ window.onload = function () {
     switch (getRadioCheckedValue('inventory')) {
       case 'snack':
         var textnode6 = document.createTextNode('You buy some almond-flavored pastries that are flaky and filled with butter. You pat your tummy, your hunger sated.')
-        createDivAndText(textnode6)
+        createDivAndText2(textnode6)
         money-=25
         break;
       case 'figurines':
         var textnode7 = document.createTextNode('You buy a stone figurine of a lion. It snarls fiercely at you, almost as if it were alive.')
-        createDivAndText(textnode7)
+        createDivAndText2(textnode7)
         money-=50
         break;
       case 'lanterns':
