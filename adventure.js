@@ -24,7 +24,7 @@ var buyStuff = function (cost, flavorText) {
     createDivAndText2(document.createTextNode(flavorText))
     money-=cost
   } else {
-    createDivAndText(document.createTextNode('You do not have enough gold for that! You only have ' + money + ' gp.'))
+    createDivAndText2(document.createTextNode('You do not have enough gold for that! You only have ' + money + ' gp.'))
   }
 }
 
