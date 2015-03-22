@@ -32,8 +32,10 @@ window.onload = function () {
         break;
       case 'lanterns':
         var textnode8 = document.createTextNode('You go over to ')
+        createDivAndText2(textnode8)
         break;
       case 'jewelry':
+        createDivAndText2(document.createTextNode('jewelry'))
         money-=100
         break;
       }
