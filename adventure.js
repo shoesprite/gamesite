@@ -51,7 +51,7 @@ var buyStuff = function (cost, flavorText) {
       }
     return false;
   }
-  var createDivAndText = function (sometext) 
+  var createDivAndText = function (sometext) {
     adventure_text.appendChild(document.createElement('div').appendChild(sometext))
     adventure_text.appendChild(document.createElement("br"));
   }
