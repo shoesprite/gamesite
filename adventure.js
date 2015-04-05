@@ -5,7 +5,7 @@ window.onload = function () {
   var recordSalesForm = document.getElementById('recordSalesForm')
   var adventure_text2 = document.getElementById('adventure_text2')
   var money = 0
-  var dragonSold = no
+  var dragonSold = False
 
   function getRadioCheckedValue(radio_name) {
    var oRadio = document.forms[0].elements[radio_name];
@@ -67,7 +67,7 @@ var buyStuff = function (cost, flavorText) {
   } 
   noButton.onclick = function() {
     var textnode4 = document.createTextNode("You walk away from the deal with heavy pockets containing 100 gp, although you feel bad for the hatchling.");
-    dragonSold = yes
+    dragonSold = True
     createDivAndText(textnode4)
     money = 100
     var textnode5 = document.createTextNode("You walk into a market with lots of cool stuff. However, the only items within your budget are some snacks (25 gp), some figurines (50 gp), a few lanterns(75), and some fancy amber jewelry(100.)");
