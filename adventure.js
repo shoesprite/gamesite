@@ -5,6 +5,7 @@ window.onload = function () {
   var recordSalesForm = document.getElementById('recordSalesForm')
   var adventure_text2 = document.getElementById('adventure_text2')
   var money = 0
+  var dragonSold = no
 
   function getRadioCheckedValue(radio_name) {
    var oRadio = document.forms[0].elements[radio_name];
@@ -38,7 +39,7 @@ var buyStuff = function (cost, flavorText) {
           buyStuff(50, 'You buy a stone figurine of a lion. It snarls fiercely at you, almost as if it were alive.')
           break;
       case 'lanterns':
-        buyStuff(75, 'lanterns')
+        buyStuff(75, 'You buy a glowing lantern with')
         break;
       case 'jewelry':
         buyStuff(100, 'jewelry')
@@ -65,10 +66,13 @@ var buyStuff = function (cost, flavorText) {
   createDivAndText(textnode3)
   } 
   noButton.onclick = function() {
-    var textnode4 = document.createTextNode("You walk away from the deal with heavy pockets and a heavy heart. The dragon's eyes linger in your mind.");
+    var textnode4 = document.createTextNode("You walk away from the deal with heavy pockets containing 100 gp, although you feel bad for the hatchling.");
+    dragonSold = yes
     createDivAndText(textnode4)
     money = 100
     var textnode5 = document.createTextNode("You walk into a market with lots of cool stuff. However, the only items within your budget are some snacks (25 gp), some figurines (50 gp), a few lanterns(75), and some fancy amber jewelry(100.)");
     createDivAndText(textnode5)
+  if (dragonSold && money == 0) {
+    var textnode4 = document.createTextNode("Having spent all your money, you decide to go home, happy with a good day of shopping. "
   }
 }
