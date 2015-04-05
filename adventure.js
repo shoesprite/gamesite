@@ -77,5 +77,4 @@ var buyStuff = function (cost, flavorText) {
       var textnode6 = document.createTextNode("Having spent all your money, you decide to go home, happy with a good day of adventure! The End. ")
       createDivAndText(textnode6)
   }
-  }
 }
