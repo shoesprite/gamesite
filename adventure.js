@@ -28,6 +28,10 @@ var buyStuff = function (cost, flavorText) {
   } else {
     createDivAndText2(document.createTextNode('You do not have enough gold for that! You only have ' + money + ' gp.'))
   }
+  if (dragonSold && money == 0) {
+    var textnode6 = document.createTextNode("Having spent all your money, you decide to go home, happy with a good day of adventure! The End. ")
+    createDivAndText(textnode6)
+  }
 }
 
   recordSalesForm.onsubmit = function () {
@@ -72,9 +76,5 @@ var buyStuff = function (cost, flavorText) {
     money = 100
     var textnode5 = document.createTextNode("You walk into a market with lots of cool stuff. However, the only items within your budget are some snacks (25 gp), some figurines (50 gp), a few lanterns(75), and some fancy amber jewelry(100.)");
     createDivAndText(textnode5)
-  }
-  if (dragonSold && money == 0) {
-      var textnode6 = document.createTextNode("Having spent all your money, you decide to go home, happy with a good day of adventure! The End. ")
-      createDivAndText(textnode6)
   }
 }
