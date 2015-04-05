@@ -51,7 +51,7 @@ var buyStuff = function (cost, flavorText) {
       }
     return false;
   }
-  var createDivAndText = function (sometext) {
+  var createDivAndText = function (sometext) 
     adventure_text.appendChild(document.createElement('div').appendChild(sometext))
     adventure_text.appendChild(document.createElement("br"));
   }
@@ -62,6 +62,9 @@ var buyStuff = function (cost, flavorText) {
   var textnode = document.createTextNode("You are an adventurer, trekking through the forest in search of monsters and treasure. ");
   createDivAndText(textnode)
   var textnode2 = document.createTextNode("Suddenly, you find a baby dragon! Dragons are a lot of work, but the hatchling is so adorable. It stares at you with big eyes, and starts to follow you around wherever you go. It looks like you can't just walk away.")
+  var dragonImage = document.createElement('img')
+  dragonImage.setAttribute('src', 'https://camo.githubusercontent.com/f7161621bcc46681ea5449aed8663ac2fda81c02/687474703a2f2f6f70656e67616d656172742e6f72672f73697465732f64656661756c742f66696c65732f637574655f647261676f6e2e706e67')
+  adventure_text.appendChild(dragonImage)
   textnode2a = document.createTextNode("Suddenly, you remember that dragons are highly valued on the market for their brute strength. Do you keep it as a pet? ")
   createDivAndText(textnode2)
   createDivAndText(textnode2a)
