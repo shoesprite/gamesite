@@ -67,7 +67,24 @@ var buyStuff = function (cost, flavorText) {
   createDivAndText(textnode2a)
   yesButton.onclick = function() {
     var textnode3 = document.createTextNode("You pat the the hatchling on its head. It purrs, leaving soot on your pants.")
-  createDivAndText(textnode3)
+    createDivAndText(textnode3)
+    var choice = Math.floor(Math.random() * 4)
+    var dragonChoiceText = ''
+    switch(choice) {
+      case 0:
+        dragonChoiceText = 'The dragon turns out to be evil'
+        break;
+      case 1:
+        dragonChoiceText = 'The dragon is a lizard'
+        break;
+      case 2:
+        dragonChoiceText = 'The dragon is a wizard'
+        break;
+      case 3:
+        dragonChoiceText = 'The dragon leads you to a pot of gold'
+        break;
+    }
+    createDivAndText(document.createTextNode(dragonChoiceText))
   } 
   noButton.onclick = function() {
     var textnode4 = document.createTextNode("You walk away from the deal with heavy pockets containing 100 gp, although you feel bad for the hatchling.");
