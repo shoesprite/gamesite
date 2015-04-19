@@ -5,7 +5,7 @@ window.onload = function () {
   var recordSalesForm = document.getElementById('recordSalesForm')
   var adventure_text2 = document.getElementById('adventure_text2')
   var money = 0
-  var dragonSold = false
+  var hadMoney = false
 
   function getRadioCheckedValue(radio_name) {
    var oRadio = document.forms[0].elements[radio_name];
@@ -82,17 +82,16 @@ var buyStuff = function (cost, flavorText) {
         dragonChoiceText = 'The dragon is a wizard'
         break;
       case 3:
-        dragonChoiceText = 'You reach out to the dragon to pet it, but it scampers away! You run after it, and when you catch up to it, you see a pot of gold by your feet. You decide to go to the market and make the best use of your gold. You can meet the dragon again later.'
+        dragonChoiceText = 'You reach out to the dragon to pet it, but it scampers away! You run after it, and when you catch up to it, you see a pot of gold by your feet. You decide to go to the market and make the best use of your gold. You can meet the dragon again later. You walk into a market with lots of cool stuff. However, the only items within your budget are some snacks (25 gp), some figurines (50 gp), a few lanterns(75), and some fancy amber jewelry(100.)'
         money+=100
-        var textnode5 = document.createTextNode("You walk into a market with lots of cool stuff. However, the only items within your budget are some snacks (25 gp), some figurines (50 gp), a few lanterns(75), and some fancy amber jewelry(100.)");
-        createDivAndText(textnode5)
+        hadMoney = true;
         break;
     }
     createDivAndText(document.createTextNode(dragonChoiceText))
   } 
   noButton.onclick = function() {
     var textnode4 = document.createTextNode("You walk away from the deal with heavy pockets containing 100 gp, although you feel bad for the hatchling.");
-    dragonSold = true
+    hadMoney = true
     createDivAndText(textnode4)
     money = 100
     var textnode5 = document.createTextNode("You walk into a market with lots of cool stuff. However, the only items within your budget are some snacks (25 gp), some figurines (50 gp), a few lanterns(75), and some fancy amber jewelry(100.)");
