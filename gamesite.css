@@ -23,6 +23,9 @@ h2{
 #menu {
   text-align: center;
 }
+#menu a {
+   padding: 10px;
+}
 .centering{
   text-align: center;
 }
