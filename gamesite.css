@@ -22,11 +22,17 @@ h2{
 }
 #menu {
   text-align: center;
+   border-top: 1px grey solid;
+  border-bottom: 1px solid grey;
+  padding: 10px;
 }
 #menu a {
    padding: 10px;
    text-decoration: none;
-   color: blue;
+   color: rgba(23, 23, 197, 0.75);
+}
+a:hover {
+  font-weight: bold;
 }
 .centering{
   text-align: center;
