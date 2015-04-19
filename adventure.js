@@ -43,10 +43,10 @@ var buyStuff = function (cost, flavorText) {
           buyStuff(50, 'You buy a stone figurine of a lion. It snarls fiercely at you, almost as if it were alive.')
           break;
       case 'lanterns':
-        buyStuff(75, 'You buy a glowing lantern with')
+        buyStuff(75, 'You buy a glowing lantern inscribed with flowing letters in a foreign language.')
         break;
       case 'jewelry':
-        buyStuff(100, 'jewelry')
+        buyStuff(100, 'You purchase some amber necklaces that glitter and sparkle in the sunlight. They were quite pricey, but very pretty.')
         break;
       }
     return false;
@@ -64,6 +64,7 @@ var buyStuff = function (cost, flavorText) {
   var textnode2 = document.createTextNode("Suddenly, you find a baby dragon! Dragons are a lot of work, but the hatchling is so adorable. It stares at you with big eyes, and starts to follow you around wherever you go. It looks like you can't just walk away.")
   var dragonImage = document.createElement('img')
   dragonImage.setAttribute('src', 'https://cloud.githubusercontent.com/assets/10101180/7220868/6805357c-e68c-11e4-816e-a4f4afcbedca.jpg')
+  dragonImage.className = 'dragonImage'
   adventure_text.appendChild(dragonImage)
   textnode2a = document.createTextNode("Suddenly, you remember that dragons are highly valued on the market for their brute strength. Do you keep it as a pet? ")
   createDivAndText(textnode2)
