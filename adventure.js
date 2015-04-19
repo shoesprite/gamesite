@@ -63,7 +63,7 @@ var buyStuff = function (cost, flavorText) {
   createDivAndText(textnode)
   var textnode2 = document.createTextNode("Suddenly, you find a baby dragon! Dragons are a lot of work, but the hatchling is so adorable. It stares at you with big eyes, and starts to follow you around wherever you go. It looks like you can't just walk away.")
   var dragonImage = document.createElement('img')
-  dragonImage.setAttribute('src', 'https://camo.githubusercontent.com/f7161621bcc46681ea5449aed8663ac2fda81c02/687474703a2f2f6f70656e67616d656172742e6f72672f73697465732f64656661756c742f66696c65732f637574655f647261676f6e2e706e67')
+  dragonImage.setAttribute('src', 'https://cloud.githubusercontent.com/assets/10101180/7220868/6805357c-e68c-11e4-816e-a4f4afcbedca.jpg')
   adventure_text.appendChild(dragonImage)
   textnode2a = document.createTextNode("Suddenly, you remember that dragons are highly valued on the market for their brute strength. Do you keep it as a pet? ")
   createDivAndText(textnode2)
