@@ -69,22 +69,23 @@ var buyStuff = function (cost, flavorText) {
   createDivAndText(textnode2)
   createDivAndText(textnode2a)
   yesButton.onclick = function() {
-    var textnode3 = document.createTextNode("You pat the the hatchling on its head. It purrs, leaving soot on your pants.")
-    createDivAndText(textnode3)
     var choice = Math.floor(Math.random() * 4)
     var dragonChoiceText = ''
     switch(choice) {
       case 0:
-        dragonChoiceText = 'The dragon turns out to be evil'
+        dragonChoiceText = 'You try to pat the dragon, but it suddenly turns on you, snapping and snarling. The dragon is actually evil! Go to the dragon game to see what happens.'
         break;
       case 1:
-        dragonChoiceText = 'The dragon is a lizard'
+        dragonChoiceText = 'You start to pat the dragon, but it shies away; on closer inspection, you see that it is a lizard! It scurries away, leaving you feeling foolish.'
         break;
       case 2:
         dragonChoiceText = 'The dragon is a wizard'
         break;
       case 3:
-        dragonChoiceText = 'The dragon leads you to a pot of gold'
+        dragonChoiceText = 'You reach out to the dragon to pet it, but it scampers away! You run after it, and when you catch up to it, you see a pot of gold by your feet. You decide to go to the market and make the best use of your gold. You can meet the dragon again later.'
+        money+=100
+        var textnode5 = document.createTextNode("You walk into a market with lots of cool stuff. However, the only items within your budget are some snacks (25 gp), some figurines (50 gp), a few lanterns(75), and some fancy amber jewelry(100.)");
+        createDivAndText(textnode5)
         break;
     }
     createDivAndText(document.createTextNode(dragonChoiceText))
