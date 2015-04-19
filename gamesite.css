@@ -2,6 +2,7 @@ body{
    background-image: url("https://cloud.githubusercontent.com/assets/10101180/7221583/c15a53ec-e6a4-11e4-9733-92eb177cd39d.png");
     background-repeat: repeat;
     font-family: 'Open Sans', sans-serif  ;
+   color:rgba(0, 0, 0, 0.79);
 
 }
 .game_results{
