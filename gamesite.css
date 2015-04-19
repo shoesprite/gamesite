@@ -1,6 +1,12 @@
 body{
    background-image: url("https://cloud.githubusercontent.com/assets/10101180/7221472/1a2520fa-e6a1-11e4-9099-e3ac1e4f8472.png");
     background-repeat: repeat;
+   width: 900px;
+  clear: both;
+  margin: 0 auto;
+  background-color: rgba(255,255,255,0.8);
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
 }
 .game_results{
   margin: 30px auto;
