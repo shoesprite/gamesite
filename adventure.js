@@ -80,7 +80,7 @@ var buyStuff = function (cost, flavorText) {
         dragonChoiceText = 'You start to pat the dragon, but it shies away; on closer inspection, you see that it is a lizard! It scurries away, leaving you feeling foolish.'
         break;
       case 2:
-        dragonChoiceText = 'The dragon is a wizard'
+        dragonChoiceText = 'As soon as you touch the dragon, there is a poof of smoke! As the smoke clears, it is revealed that the dragon has turned into a wizard! He bows to you in gratitude, saying,"Thank you for freeing me from my curse!"and vanishes in a flash of light, leaving you dazed and confused.'
         break;
       case 3:
         dragonChoiceText = 'You reach out to the dragon to pet it, but it scampers away! You run after it, and when you catch up to it, you see a pot of gold by your feet. You decide to go to the market and make the best use of your gold. You can meet the dragon again later. You walk into a market with lots of cool stuff. However, the only items within your budget are some snacks (25 gp), some figurines (50 gp), a few lanterns(75), and some fancy amber jewelry(100.)'
